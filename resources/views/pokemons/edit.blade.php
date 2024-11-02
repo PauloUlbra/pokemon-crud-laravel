@@ -23,17 +23,17 @@
             @method('PUT')
             <div class="form-group">
                 <label for="inputNome" class="text-light">Nome</label>
-                <input type="text" class="form-control" name="nome" placeholder="Nome do Pokemon">
+                <input type="text" class="form-control" name="nome" value="{{ $pokemons->nome }}" placeholder="Nome do Pokemon">
             </div>    
             <br>
             <div class="form-group">
                 <label for="inputTipo" class="text-light">Tipagem do pokemon</label>
-                <input type="text" class="form-control" name="tipo" placeholder="Tipagem do Pokemon">
+                <input type="text" class="form-control" name="tipo" value="{{ $pokemons->tipo }}" placeholder="Tipagem do Pokemon">
             </div>  
             <br>    
             <div class="form-group">
                 <label for="inputNome" class="text-light">Pontos de poder</label>
-                <input class="form-control" name="pontos_de_poder" placeholder="Pontos de poder">
+                <input class="form-control" name="pontos_de_poder" value="{{ $pokemons->pontos_de_poder }}" placeholder="Pontos de poder">
             </div>  
             <br>
             <button type="submit" class="btn btn-primary ">Cadastrar pokemon</button>
